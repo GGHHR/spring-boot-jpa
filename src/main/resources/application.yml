@@ -1,1 +1,6 @@
- 
+devtools:
+  livereload:
+    enabled: true
+    port: 8080
+  restart:
+    enabled: true
