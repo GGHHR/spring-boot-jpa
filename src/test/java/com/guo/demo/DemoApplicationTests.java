@@ -13,10 +13,6 @@ class DemoApplicationTests {
     @Autowired
     private Hello Hello;
 
-    @Test
-    void hello() {
-        String aHello = Hello.hello();
-        System.out.println(aHello);
-    }
+
 
 }

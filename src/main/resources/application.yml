@@ -4,3 +4,7 @@ devtools:
     port: 8080
   restart:
     enabled: true
+
+spring:
+  resources:
+    static-locations: classpath:/template/
