@@ -11,7 +11,4 @@ class DemoApplicationTests {
 
     @Autowired
     private Hello Hello;
-
-
-
 }
