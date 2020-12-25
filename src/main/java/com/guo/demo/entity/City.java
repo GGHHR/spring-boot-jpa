@@ -12,7 +12,7 @@ public  class City {
     @Id
     private Integer Id;
     private String Name;
-    private String CountryCode;
+    private String Countrycode;
     private String District;
     private Integer Population;
 }
