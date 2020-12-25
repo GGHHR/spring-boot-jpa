@@ -8,10 +8,11 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class City {
+public  class City {
     @Id
     private Integer Id;
     private String Name;
+    private String CountryCode;
     private String District;
-    private String Population;
+    private Integer Population;
 }

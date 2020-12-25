@@ -5,8 +5,6 @@ devtools:
         enabled: true
 
 spring:
-    resources:
-        static-locations: classpath:/template/
     datasource:
         username: root
         password: a1241639333
@@ -15,4 +13,8 @@ spring:
         hibernate:
             ddl-auto: update
         show-sql: true
-
+    web:
+        resources:
+            static-locations: classpath:/template/
+    thymeleaf:
+        encoding: utf-8

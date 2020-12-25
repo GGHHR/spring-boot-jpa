@@ -15,6 +15,9 @@ public class Hello {
 
     @GetMapping("/all")
     public @ResponseBody Object  getAllCity( Integer id) {
+
+        System.out.println( cityRepository.findByName("Tilburg"));
+
         return cityRepository.findById(id);
     }
 }
