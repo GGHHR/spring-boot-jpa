@@ -19,9 +19,8 @@ public class Hello {
 
         City a = cityRepo.findById(id).get();
         System.out.println(a);
-        a.setName("你好");
+        a.setName("2");
         cityRepo.save(a);
-
         return a;
     }
 
