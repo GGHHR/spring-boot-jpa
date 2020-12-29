@@ -1,13 +1,21 @@
 package com.guo.demo.repository;
 
 import com.guo.demo.entity.City;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface CityRepository  extends CrudRepository<City, Integer> {
+import javax.transaction.Transactional;
+import java.util.List;
 
-    @Query("select  a from City  a where a.Name = ?1")
-    City findByName(String Name);
+@Transactional
+@Repository
+public interface CityRepository  extends JpaRepository<City, Integer> {
+
+    @Transactional
+    @Modifying(clearAutomatically = true)
+    @Query(value = "update City set name=?2 where id=?1" ,nativeQuery = true)
+    List<City> updateName (  Integer id, String name);
+
 }
