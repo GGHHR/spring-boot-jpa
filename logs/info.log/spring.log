@@ -1,0 +1,92 @@
+2021-01-10 10:22:25.836  INFO 8088 --- [restartedMain] com.guo.demo.DemoApplication             : Starting DemoApplication using Java 11.0.8 on DESKTOP-FVS5IG2 with PID 8088 (D:\guo\spring-boot\target\classes started by guo in D:\guo\spring-boot)
+2021-01-10 10:22:25.836  INFO 8088 --- [restartedMain] com.guo.demo.DemoApplication             : No active profile set, falling back to default profiles: default
+2021-01-10 10:22:25.977  INFO 8088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 10:22:25.985  INFO 8088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2021-01-10 10:22:26.067  INFO 8088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-10 10:22:26.068  INFO 8088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-10 10:22:26.068  INFO 8088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:22:26.091  INFO 8088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-10 10:22:26.091  INFO 8088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 253 ms
+2021-01-10 10:22:26.118  INFO 8088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 10:22:26.123  INFO 8088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-01-10 10:22:26.135  INFO 8088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-01-10 10:22:26.135  INFO 8088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-10 10:22:26.159  INFO 8088 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 10:22:26.160  INFO 8088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 10:22:26.168  INFO 8088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-10 10:22:26.169  INFO 8088 --- [restartedMain] com.guo.demo.DemoApplication             : ---> info start! <------
+2021-01-10 10:22:26.169  WARN 8088 --- [restartedMain] com.guo.demo.DemoApplication             : ---> warn start! <------
+2021-01-10 10:22:26.169 ERROR 8088 --- [restartedMain] com.guo.demo.DemoApplication             : ---> error start! <------
+2021-01-10 10:22:26.215  WARN 8088 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 10:22:26.237  INFO 8088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 10:22:26.246  INFO 8088 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [template/index.html]
+2021-01-10 10:22:26.262  WARN 8088 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-10 10:22:26.296  INFO 8088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-10 10:22:26.303  INFO 8088 --- [restartedMain] com.guo.demo.DemoApplication             : Started DemoApplication in 0.515 seconds (JVM running for 988.873)
+2021-01-10 10:22:26.305  INFO 8088 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-10 10:22:53.861  INFO 8088 --- [Thread-53] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 10:22:53.861  INFO 8088 --- [Thread-53] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 10:22:53.862  INFO 8088 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-01-10 10:22:53.870  INFO 8088 --- [Thread-53] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-01-10 10:24:57.539  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : Starting DemoApplication using Java 11.0.8 on DESKTOP-FVS5IG2 with PID 4700 (D:\guo\spring-boot\target\classes started by guo in D:\guo\spring-boot)
+2021-01-10 10:24:57.543  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : No active profile set, falling back to default profiles: default
+2021-01-10 10:24:57.587  INFO 4700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-10 10:24:57.588  INFO 4700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-10 10:24:58.095  INFO 4700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 10:24:58.132  INFO 4700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2021-01-10 10:24:58.553  INFO 4700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-10 10:24:58.560  INFO 4700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-10 10:24:58.560  INFO 4700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:24:58.629  INFO 4700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-10 10:24:58.629  INFO 4700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2021-01-10 10:24:58.729  INFO 4700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 10:24:58.761  INFO 4700 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-10 10:24:58.842  INFO 4700 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-10 10:24:58.914  INFO 4700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-10 10:24:59.137  INFO 4700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-10 10:24:59.153  INFO 4700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-10 10:24:59.682  INFO 4700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 10:24:59.689  INFO 4700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 10:24:59.719  INFO 4700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-10 10:24:59.720  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> info start! <------
+2021-01-10 10:24:59.721  WARN 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> warn start! <------
+2021-01-10 10:24:59.721 ERROR 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> error start! <------
+2021-01-10 10:24:59.964  WARN 4700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 10:25:00.069  INFO 4700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 10:25:00.122  INFO 4700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [template/index.html]
+2021-01-10 10:25:00.170  WARN 4700 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-10 10:25:00.280  INFO 4700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-10 10:25:00.294  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : Started DemoApplication in 3.135 seconds (JVM running for 3.922)
+2021-01-10 10:25:27.198  INFO 4700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:25:27.199  INFO 4700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-10 10:25:27.200  INFO 4700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-10 10:27:48.311  INFO 4700 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-10 10:27:48.312  INFO 4700 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 10:27:48.316  INFO 4700 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-10 10:27:48.327  INFO 4700 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-10 10:27:48.407  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : Starting DemoApplication using Java 11.0.8 on DESKTOP-FVS5IG2 with PID 4700 (D:\guo\spring-boot\target\classes started by guo in D:\guo\spring-boot)
+2021-01-10 10:27:48.408  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : No active profile set, falling back to default profiles: default
+2021-01-10 10:27:48.556  INFO 4700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-10 10:27:48.564  INFO 4700 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2021-01-10 10:27:48.649  INFO 4700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-10 10:27:48.650  INFO 4700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-10 10:27:48.650  INFO 4700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:27:48.677  INFO 4700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-10 10:27:48.677  INFO 4700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2021-01-10 10:27:48.708  INFO 4700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-10 10:27:48.715  INFO 4700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-10 10:27:48.729  INFO 4700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-10 10:27:48.730  INFO 4700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-10 10:27:48.762  INFO 4700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-10 10:27:48.762  INFO 4700 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-10 10:27:48.772  INFO 4700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-10 10:27:48.773  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> info start! <------
+2021-01-10 10:27:48.773  WARN 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> warn start! <------
+2021-01-10 10:27:48.773 ERROR 4700 --- [restartedMain] com.guo.demo.DemoApplication             : ---> error start! <------
+2021-01-10 10:27:48.823  WARN 4700 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-10 10:27:48.851  INFO 4700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-10 10:27:48.862  INFO 4700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [template/index.html]
+2021-01-10 10:27:48.878  WARN 4700 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-10 10:27:48.907  INFO 4700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-10 10:27:48.911  INFO 4700 --- [restartedMain] com.guo.demo.DemoApplication             : Started DemoApplication in 0.533 seconds (JVM running for 172.538)
+2021-01-10 10:27:48.912  INFO 4700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

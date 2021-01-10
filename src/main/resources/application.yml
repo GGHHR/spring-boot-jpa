@@ -7,7 +7,7 @@ devtools:
 spring:
     datasource:
         username: root
-        password: a1241639333
+        password: 123456
         url:  jdbc:mysql://localhost:3306/world?serverTimezone=Asia/Shanghai
     jpa:
         hibernate:
@@ -18,3 +18,10 @@ spring:
             static-locations: classpath:/template/
     thymeleaf:
         encoding: utf-8
+logging:
+    file:
+        path: logs/info.log
+    logback:
+        rollingpolicy:
+            max-history: 2
+            max-file-size: 1MB
