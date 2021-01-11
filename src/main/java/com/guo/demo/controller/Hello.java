@@ -1,7 +1,6 @@
 package com.guo.demo.controller;
 
 import com.guo.demo.repository.CityRepository;
-import org.hibernate.cfg.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +29,7 @@ public class Hello {
 
     @GetMapping("/name")
     public @ResponseBody Object  setName(@RequestParam(required = false) Integer id,@RequestParam(required = false) String name) {
-
+        System.out.println(cityRepo.findByName(name));
         return cityRepo.findById(id);
     }
 

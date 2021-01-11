@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 
 
 @Entity
@@ -15,7 +14,6 @@ public  class City {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    @NotNull
     private Integer Id;
     private String Name;
     private String Countrycode;
