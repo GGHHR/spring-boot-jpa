@@ -29,8 +29,11 @@ public class Hello {
 
     @GetMapping("/name")
     public @ResponseBody Object  setName(@RequestParam(required = false) Integer id,@RequestParam(required = false) String name) {
-        System.out.println(cityRepo.findByName(name));
-        return cityRepo.findById(id);
+        return cityRepo.findByName(name);
+    }
+    @GetMapping("/ds")
+    public @ResponseBody Object  district( @RequestParam(required = false) String district) {
+        return cityRepo.findByDistrict(district);
     }
 
 }

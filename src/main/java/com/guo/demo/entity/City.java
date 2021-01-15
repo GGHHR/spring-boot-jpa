@@ -2,10 +2,7 @@ package com.guo.demo.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Entity
@@ -14,9 +11,11 @@ public  class City {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer Id;
-    private String Name;
-    private String Countrycode;
-    private String District;
-    private Integer Population;
+    private Integer id;
+    private String name;
+    private String countrycode;
+
+    @Column(name="district")
+    private String district;
+    private Integer population;
 }
