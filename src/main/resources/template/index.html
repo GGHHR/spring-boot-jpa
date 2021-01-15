@@ -9,10 +9,25 @@
 </head>
 <body>
 
-<video id="myvideo" class="video-js vjs-default-skin" controls preload="auto"
-       width="400" height="300" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
-    <source src="rtmp://58.200.131.2:1935/livetv/cctv1" type="rtmp/mp4">
-</video>
-</body>
 
+</body>
+<script>
+    var ws = new WebSocket("ws://localhost:8080/wsdemo");
+
+    ws.onopen = function(evt) {
+        console.log("Connection open ...");
+        setInterval(function () {
+            ws.send("Hello WebSockets!");
+        },1000);
+    };
+
+    ws.onmessage = function(evt) {
+        console.log( "Received Message: " + evt.data);
+        // ws.close();
+    };
+
+    ws.onclose = function(evt) {
+        console.log("Connection closed.");
+    };
+</script>
 </html>

@@ -1,5 +1,6 @@
 package com.guo.demo.controller;
 
+import com.guo.demo.entity.City;
 import com.guo.demo.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Date;
 
 
 @RestController
@@ -34,6 +37,14 @@ public class Hello {
     @GetMapping("/ds")
     public @ResponseBody Object  district( @RequestParam(required = false) String district) {
         return cityRepo.findByDistrict(district);
+    }
+    @GetMapping("/save")
+    public @ResponseBody Object  save( @RequestParam(required = false) String name) {
+        City a = new City();
+        a.setName("nihao");
+        a.setCreatAt(new Date());
+        cityRepo.save(a);
+        return  a;
     }
 
 }
