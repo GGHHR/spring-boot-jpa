@@ -16,7 +16,7 @@ public  class City {
     private String name;
     private String countryCode;
 
-    @Column(name="district")
+    @Column(name="district",length = 100)
     private String district;
 
     private Integer population;
