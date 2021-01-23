@@ -3,6 +3,9 @@ package com.guo.demo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.io.IOException;
+
 @Slf4j
 @SpringBootApplication
 public class DemoApplication {
@@ -15,6 +18,12 @@ public class DemoApplication {
         System.out.println("===> System.out.println <=====");
     }
     public static void main(String[] args) {
+        /*打开默认浏览器*/
+        /*try {
+            Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler http://localhost:8080/index.html");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
         SpringApplication.run(DemoApplication.class, args);
     }
 
