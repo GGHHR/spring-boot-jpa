@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
 public class Hello {
@@ -25,14 +27,22 @@ public class Hello {
     public String show() {
         return url;
     }
+    @GetMapping("/all")
+    public @ResponseBody Object  all() {
+        List list=cityRepo.findAll();
+        return list;
+    }
 
     @GetMapping("/name")
     public @ResponseBody Object  setName(@RequestParam(required = false) Integer id,@RequestParam(required = false) String name) {
+        System.out.println();
         return cityRepo.findByName(name);
     }
+
     @GetMapping("/ds")
     public @ResponseBody Object  district( @RequestParam(required = false) String district) {
         return cityRepo.findByDistrict(district);
     }
+
 
 }

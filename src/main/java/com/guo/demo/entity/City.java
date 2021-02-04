@@ -23,4 +23,16 @@ public  class City {
 
     @CreatedDate
     private Date creatAt;
+
+
+   /* @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", district=" + district +
+                ", countryCode=" + countryCode +
+                ", creatAt=" + creatAt +
+                '}';
+    }*/
 }
