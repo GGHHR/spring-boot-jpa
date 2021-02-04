@@ -14,5 +14,5 @@ public interface CityRepository extends JpaRepository<City, Integer> {
     @Query(value = "select * from city where name = ?1 ",nativeQuery = true)
     List findByName( String name);
 
-    City findByDistrict( String district);
+    List findByDistrict( String district);
 }

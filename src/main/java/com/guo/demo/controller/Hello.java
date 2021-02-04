@@ -35,13 +35,19 @@ public class Hello {
 
     @GetMapping("/name")
     public @ResponseBody Object  setName(@RequestParam(required = false) Integer id,@RequestParam(required = false) String name) {
-        System.out.println();
-        return cityRepo.findByName(name);
+        List list=cityRepo.findByName(name);
+        return list;
     }
 
     @GetMapping("/ds")
     public @ResponseBody Object  district( @RequestParam(required = false) String district) {
-        return cityRepo.findByDistrict(district);
+        List list= cityRepo.findByDistrict(district);
+
+        /*Iterator it = list.iterator();
+        while (it.hasNext()){
+            City city = (City) it.next();
+        }*/
+        return list;
     }
 
 
