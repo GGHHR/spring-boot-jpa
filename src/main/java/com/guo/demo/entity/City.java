@@ -1,5 +1,6 @@
 package com.guo.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -20,6 +21,7 @@ public  class City {
 
     private Integer population;
 
+    @JsonFormat(pattern = "YYYY-MM-dd HH:mm:ss",timezone = "GMT+8")
     @Temporal(TemporalType.TIMESTAMP)
     private Date creatAt=new Date();
 
