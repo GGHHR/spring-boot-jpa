@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @RestController
@@ -30,14 +31,17 @@ public class Hello {
     }
     @GetMapping("/all")
     public @ResponseBody Object  all() {
-
         List list=cityRepo.findAll();
         return list;
     }
 
     @GetMapping("/name")
     public @ResponseBody Object  setName(@RequestParam(required = false) Integer id,@RequestParam(required = false) String name) {
-        List list=cityRepo.findByName(name);
+        List<City> list=cityRepo.findByName(name);
+        list.stream().map(data->{
+            System.out.println(data.getId());
+            return data;
+        }).collect(Collectors.toList());
         return list;
     }
 
