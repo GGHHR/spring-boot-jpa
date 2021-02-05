@@ -11,8 +11,8 @@ import java.util.List;
 @Repository
 public interface CityRepository extends JpaRepository<City, Integer> {
 
-    @Query(value = "select * from city where name = ?1 ",nativeQuery = true)
-    List findByName( String name);
+    @Query(value = "select * from city a where name = ?1 ",nativeQuery = true)
+    List<City> findByName( String name);
 
     List findByDistrict( String district);
 }

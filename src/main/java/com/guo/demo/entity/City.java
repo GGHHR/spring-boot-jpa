@@ -1,7 +1,6 @@
 package com.guo.demo.entity;
 
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -21,18 +20,8 @@ public  class City {
 
     private Integer population;
 
-    @CreatedDate
-    private Date creatAt;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date creatAt=new Date();
 
 
-   /* @Override
-    public String toString() {
-        return "City{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", district=" + district +
-                ", countryCode=" + countryCode +
-                ", creatAt=" + creatAt +
-                '}';
-    }*/
 }

@@ -1,5 +1,6 @@
 package com.guo.demo.controller;
 
+import com.guo.demo.entity.City;
 import com.guo.demo.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -29,6 +30,7 @@ public class Hello {
     }
     @GetMapping("/all")
     public @ResponseBody Object  all() {
+
         List list=cityRepo.findAll();
         return list;
     }
@@ -42,12 +44,13 @@ public class Hello {
     @GetMapping("/ds")
     public @ResponseBody Object  district( @RequestParam(required = false) String district) {
         List list= cityRepo.findByDistrict(district);
-
-        /*Iterator it = list.iterator();
-        while (it.hasNext()){
-            City city = (City) it.next();
-        }*/
         return list;
+    }
+    @GetMapping("/save")
+    public @ResponseBody Object  save( @RequestParam(required = false) String name) {
+          City a= new City();
+          a.setName(name);
+        return cityRepo.save(a);
     }
 
 
