@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,9 +27,11 @@ public class Hello {
     private String url;
     /*返回配置项url*/
     @GetMapping(path = "url")
-    public String show() {
+    public String show(HttpServletRequest request) {
+        System.out.println(request.getHeader("myHeader"));
         return url;
     }
+
     @GetMapping("/all")
     public @ResponseBody Object  all() {
         List list=cityRepo.findAll();
@@ -46,15 +49,13 @@ public class Hello {
     }
 
     @GetMapping("/ds")
-    public @ResponseBody Object  district( @RequestParam(required = false) String district) {
-        List list= cityRepo.findByDistrict(district);
+    public @ResponseBody Object  district( City city) {
+        List list= cityRepo.findByDistrict(city.getDistrict());
         return list;
     }
     @GetMapping("/save")
-    public @ResponseBody Object  save( @RequestParam(required = false) String name) {
-          City a= new City();
-          a.setName(name);
-        return cityRepo.save(a);
+    public Object  save(City city) {/*实体类接收参数*/
+        return cityRepo.save(city);
     }
 
 
