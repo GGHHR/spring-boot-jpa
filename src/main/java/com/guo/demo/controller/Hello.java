@@ -4,6 +4,7 @@ import com.guo.demo.entity.City;
 import com.guo.demo.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 
@@ -18,6 +20,8 @@ import java.util.stream.Collectors;
 public class Hello {
     @Autowired
     private CityRepository cityRepo;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
     @Value("${devtools.livereload.enabled}")
     private String autoInject;
@@ -56,6 +60,14 @@ public class Hello {
     @GetMapping("/save")
     public Object  save(City city) {/*实体类接收参数*/
         return cityRepo.save(city);
+    }
+
+
+    @GetMapping("/jd")
+    public List<Map<String, Object>>  jd(City city) {/*实体类接收参数*/
+        String sql = "select * from  user";
+        return jdbcTemplate.queryForList(sql);
+
     }
 
 
